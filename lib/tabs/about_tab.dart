@@ -19,6 +19,9 @@ class AboutTab extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 16.0),
               child: Column(
                 children: <Widget>[
+                  SizedBox(
+                    height: 20,
+                  ),
                   CircleAvatar(
                     radius: 100,
                     backgroundImage: Image.asset(Assets.avatar).image,

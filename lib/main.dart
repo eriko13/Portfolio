@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Erik German',
       theme: ThemeData(
         brightness: Brightness.light,
+        accentColor: Colors.black,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
@@ -43,7 +44,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_selectedIndex == 0 ? 'About Me' : 'My Projects'),
+        backgroundColor: Colors.white,
+        title: Text(_selectedIndex == 0 ? 'About Me' : 'My Projects', style: TextStyle(color: Colors.black),),
       ),
       body: Center(
         child: tabWidgets.elementAt(_selectedIndex),
