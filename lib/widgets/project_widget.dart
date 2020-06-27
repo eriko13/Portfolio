@@ -39,7 +39,7 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                 child: Container(),
               ),
               Expanded(
-                flex: 60,
+                flex: 100,
                 child: Container(
                   padding: EdgeInsets.only(top: 8.0),
                   child: Column(

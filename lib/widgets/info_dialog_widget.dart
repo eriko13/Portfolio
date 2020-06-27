@@ -101,14 +101,17 @@ class InfoDialog {
                         padding: const EdgeInsets.all(8.0),
                         child: FlatButton(
                           padding: EdgeInsets.symmetric(vertical: 20),
-                          color: Colors.blue,
+                          color: Colors.black,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(25)),
                           onPressed: () {
                             this.closeDialog();
                             html.window.open(youtubeLink, 'Erik German');
                           },
-                          child: Text('Youtube'),
+                          child: Text(
+                            'Youtube',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       )
                     : Container(),
@@ -117,14 +120,17 @@ class InfoDialog {
                         padding: const EdgeInsets.all(8.0),
                         child: FlatButton(
                           padding: EdgeInsets.symmetric(vertical: 20),
-                          color: Colors.blue,
+                          color: Colors.black,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(25)),
                           onPressed: () {
                             this.closeDialog();
                             html.window.open(webLink, 'Erik German');
                           },
-                          child: Text('Web Site'),
+                          child: Text(
+                            'Web Site',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       )
                     : Container(),
@@ -133,14 +139,17 @@ class InfoDialog {
                         padding: const EdgeInsets.all(8.0),
                         child: FlatButton(
                           padding: EdgeInsets.symmetric(vertical: 20),
-                          color: Colors.blue,
+                          color: Colors.black,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(25)),
                           onPressed: () {
                             this.closeDialog();
                             html.window.open(appstoreLink, 'Erik German');
                           },
-                          child: Text('App Store'),
+                          child: Text(
+                            'App Store',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       )
                     : Container(),
@@ -149,14 +158,17 @@ class InfoDialog {
                         padding: const EdgeInsets.all(8.0),
                         child: FlatButton(
                           padding: EdgeInsets.symmetric(vertical: 20),
-                          color: Colors.blue,
+                          color: Colors.black,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(25)),
                           onPressed: () {
                             this.closeDialog();
                             html.window.open(playstoreLink, 'Erik German');
                           },
-                          child: Text('Play Store'),
+                          child: Text(
+                            'Play Store',
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       )
                     : Container(),
@@ -164,14 +176,16 @@ class InfoDialog {
             ),
             actions: <Widget>[
               FlatButton(
-                color: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                color: Colors.red,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25)),
                 onPressed: () {
                   this.closeDialog();
                   _value = true;
                 },
-                child: Text('Return'),
+                child: Text('Return',
+                            style: TextStyle(color: Colors.white),),
               ),
             ],
           );
