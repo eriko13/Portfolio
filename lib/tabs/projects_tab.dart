@@ -1,4 +1,7 @@
+import 'dart:js';
+
 import 'package:portfolio/config/projects.dart';
+import 'package:portfolio/models/project_model.dart';
 import 'package:portfolio/widgets/project_widget.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +13,8 @@ class ProjectsTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage(Assets.shape), fit: BoxFit.cover)),
+          image: DecorationImage(
+              image: AssetImage(Assets.shape), fit: BoxFit.cover)),
       child: ResponsiveWidget(
         largeScreen: GridView.count(
           padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),

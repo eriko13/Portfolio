@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Project{
+class Project {
   String image;
   String name;
   String description;
-  String link;
-  Project({@required this.image,@required this.name,@required this.description, this.link});
+  String youtubeLink;
+  String webLink;
+  String appstoreLink;
+  String playstoreLink;
+  Project(
+      {@required this.image,
+      @required this.name,
+      @required this.description,
+      this.youtubeLink,
+      this.webLink,
+      this.appstoreLink,
+      this.playstoreLink});
 }

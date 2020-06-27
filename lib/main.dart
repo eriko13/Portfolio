@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 
 import 'tabs/about_tab.dart';
@@ -30,10 +32,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  static List<Widget> tabWidgets = <Widget>[
-    AboutTab(),
-    ProjectsTab(),
-  ];
 
   @override
   void initState() {
@@ -42,10 +40,17 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> tabWidgets = <Widget>[
+      AboutTab(),
+      ProjectsTab(),
+    ];
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text(_selectedIndex == 0 ? 'About Me' : 'My Projects', style: TextStyle(color: Colors.black),),
+        title: Text(
+          _selectedIndex == 0 ? 'About Me' : 'My Projects',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Center(
         child: tabWidgets.elementAt(_selectedIndex),
