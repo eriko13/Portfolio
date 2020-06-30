@@ -10,6 +10,6 @@ class Assets {
   static const avatar = 'assets/erik.jpeg';
   static const astter = 'assets/works/astter.png';
   static const va = 'assets/works/va.png';
-  static const mz = 'assets/works/mz.png';
+  static const mz = 'assets/works/MZ.png';
   static const doorio = 'assets/works/doorio.png';
 }
