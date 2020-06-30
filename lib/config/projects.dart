@@ -6,11 +6,12 @@ final List<Project> projects = [
     name: 'Astter',
     image: Assets.astter,
     description:
-        'Astter is a college student peer to peer tutoring Platform. It\'s basically Uber for tutoring classes in college, this is the biggest project I have worked in, I learned everything I know today working on this, it has Login, User Profiles, ',
+        'Astter is a college student peer to peer tutoring Platform. It\'s basically Uber for tutoring classes in college, this is the biggest project I have worked in, I learned everything I know today working on this, I was the tech lead in a team of 2, it has Login, Email Verificaton, User Profiles, Tutor Profiles, Dark Mode, noSql database in Firebase, Push Notifications using Google Functions, etc... (Stack: Flutter - Firebase - Google Functions) ',
     youtubeLink: 'https://youtu.be/rZVrSW6UYhw',
     webLink: 'https://astterapp.com/',
     appstoreLink: 'https://apps.apple.com/mx/app/astter/id1485113708',
-    playstoreLink: 'https://play.google.com/store/apps/details?id=com.assterapp',
+    playstoreLink:
+        'https://play.google.com/store/apps/details?id=com.assterapp',
   ),
   Project(
     name: 'Video Accesos',
@@ -18,6 +19,10 @@ final List<Project> projects = [
     description:
         'Video Accesos is an app that I made for a company in Culiacán, the app is an easy way to enter a private residence gate using Qr codes, and you can also schedule a party or event and invite your family by Whatsapp. (Stack: Flutter - Firebase - Google Cloud Functions)',
     youtubeLink: 'https://youtu.be/ryv4nWhVY2E',
+    webLink: 'http://videoaccesos.net/',
+    playstoreLink:
+        'https://play.google.com/store/apps/details?id=com.video_accesos&hl=es_MX',
+    appstoreLink: 'https://apps.apple.com/mx/app/video-accesos/id1506691611',
   ),
   Project(
     name: 'Mario Zamora',

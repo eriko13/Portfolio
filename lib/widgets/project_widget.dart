@@ -18,17 +18,20 @@ class _ProjectWidgetState extends State<ProjectWidget> {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Card(
+      
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, widget._bottomPadding),
       child: InkWell(
         onTap: onProjectClick,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
+              //SizedBox(height: 600,),
               Expanded(
-                  flex: 40,
+                  flex: 60,
                   child: Image.asset(
                     widget._project.image,
                     width: width * .25,
@@ -39,11 +42,11 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                 child: Container(),
               ),
               Expanded(
-                flex: 100,
+                flex: 70,
                 child: Container(
                   padding: EdgeInsets.only(top: 8.0),
                   child: Column(
-                    mainAxisSize: MainAxisSize.max,
+                    mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
