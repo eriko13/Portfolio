@@ -14,7 +14,7 @@ class InfoDialog {
       {Duration duration = const Duration(seconds: 2)}) async {
     showDialog(
         context: context,
-        barrierDismissible: false,
+        barrierDismissible: true,
         builder: (context) {
           return AlertDialog(
             shape:
@@ -86,7 +86,7 @@ class InfoDialog {
     bool _value = false;
     await showDialog(
         context: context,
-        barrierDismissible: false,
+        barrierDismissible: true,
         builder: (context) {
           return AlertDialog(
             shape:
@@ -184,8 +184,10 @@ class InfoDialog {
                   this.closeDialog();
                   _value = true;
                 },
-                child: Text('Return',
-                            style: TextStyle(color: Colors.white),),
+                child: Text(
+                  'Return',
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ],
           );
@@ -197,7 +199,7 @@ class InfoDialog {
   void showLoading(String text) {
     showDialog(
       context: context,
-      barrierDismissible: false,
+      barrierDismissible: true,
       builder: (context) {
         return AlertDialog(
           shape:
