@@ -1,7 +1,4 @@
-import 'dart:js';
-
 import 'package:portfolio/config/projects.dart';
-import 'package:portfolio/models/project_model.dart';
 import 'package:portfolio/widgets/project_widget.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
 import 'package:flutter/material.dart';

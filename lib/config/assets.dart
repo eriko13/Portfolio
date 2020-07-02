@@ -1,12 +1,14 @@
 class Assets {
+//icon images
   static const facebook = 'assets/facebook.png';
   static const github = 'assets/github.png';
   static const linkedin = 'assets/linkedin.png';
-  static const twitter = 'assets/twitter.png';
 
+//background images
   static const space = 'assets/space.jpg';
   static const shape = 'assets/shape1.jpg';
 
+//project images
   static const avatar = 'assets/erik.jpeg';
   static const astter = 'assets/works/astter.png';
   static const va = 'assets/works/va.png';

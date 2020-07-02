@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 
 import 'tabs/about_tab.dart';
@@ -10,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  // This widget is the root of the app.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

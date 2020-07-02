@@ -18,14 +18,12 @@ class _ProjectWidgetState extends State<ProjectWidget> {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Card(
-      
       margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, widget._bottomPadding),
       child: InkWell(
         onTap: onProjectClick,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
-
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
@@ -51,6 +49,7 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(widget._project.name,
+                          // ignore: deprecated_member_use
                           style: Theme.of(context).textTheme.title),
                       SizedBox(
                         height: height * .01,

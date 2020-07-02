@@ -2,7 +2,6 @@ import 'package:portfolio/config/assets.dart';
 import 'package:portfolio/config/constants.dart';
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
-import 'package:youtube_api_v3/youtube_api_v3.dart';
 
 class AboutTab extends StatelessWidget {
   @override
